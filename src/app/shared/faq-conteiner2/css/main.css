@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Figtree&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Hind:300,400&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Philosopher:wght@700&display=swap');
+
+body{
+    margin: 0;
+    padding: 0;
+    overflow-x:hidden;
+}
+
+h1 {
+  font-family: 'Philosopher', sans-serif;
+    font-size: 90px;
+    line-height: 65px;
+    text-align: center;
+    max-width: 100%;
+    min-width: auto;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height:1;
+
+
+}
+
+
+.under-text {
+  font-family: 'Philosopher', sans-serif;
+  font-size: 40px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+* {
+  box-sizing: border-box;
+}
+*::before, *::after {
+  box-sizing: border-box;
+}
+
+
+
+.container-faq {
+  margin: 0 auto;
+  padding: 4rem;
+  width: 48rem;
+}
+
+.accordion .accordion-item {
+  border: 3px solid #b100fc;
+  border-radius: 40px;
+  background-color: rgba(43, 18, 76, 0.5);
+}
+
+
+.accordion .accordion-item button[aria-expanded=true] {
+  border-bottom: 2px solid #f700ff;
+}
+
+
+.accordion button {
+  position: relative;
+  display: block;
+  text-align: center;
+  width: 100%;
+  padding: 1.5em 0;
+  color: #ffffff;
+  font-size: 1.15rem;
+  font-weight: 400;
+  border: none;
+  background: none;
+  outline: none;
+}
+.accordion button:hover{
+  cursor: pointer;
+  color: #5500ff;
+}
+
+.accordion button:focus::after{
+  cursor: pointer;
+  color: #5500ff;
+}
+.accordion button:hover::after {
+  cursor: pointer;
+  color: #d9ff00;
+  border: 1px solid #5500ff;
+}
+.accordion button .accordion-title {
+  padding: 1em 1.5em 1em 0;
+  padding-left: 20px;
+}
+.accordion button .icon {
+  display: inline-block;
+  position: absolute;
+  top: 18px;
+  right: 20px;
+  width: 22px;
+  height: 22px;
+  border: 1px solid;
+  border-radius: 22px;
+}
+.accordion button .icon::before {
+  display: block;
+  position: absolute;
+  content: "";
+  top: 9px;
+  left: 5px;
+  width: 10px;
+  height: 2px;
+  background: currentColor;
+}
+.accordion button .icon::after {
+  display: block;
+  position: absolute;
+  content: "";
+  top: 5px;
+  left: 9px;
+  width: 2px;
+  height: 10px;
+  background: currentColor;
+}
+.accordion button[aria-expanded=true] {
+  color: #5500ff;
+}
+.accordion button[aria-expanded=true] .icon::after {
+  width: 0;
+}
+.accordion button[aria-expanded=true] + .accordion-content {
+  opacity: 1;
+  max-height: 9em;
+  transition: all 200ms linear;
+  will-change: opacity, max-height;
+  padding-left: 20px;
+  padding-right: 20px;
+  color: aliceblue;
+}
+.accordion .accordion-content {
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: opacity 200ms linear, max-height 200ms linear;
+  will-change: opacity, max-height;
+}
+.accordion .accordion-content p {
+  font-size: 1rem;
+  font-weight: 300;
+  margin: 2em 0;
+}
+
+/* Мобильная адаптация */
+@media only screen and (max-width: 800px) {
+
+  h1 {
+    font-family: 'Philosopher', sans-serif;
+      font-size: 80px;
+      line-height: 65px;
+      text-align: center;
+      max-width: 100%;
+      min-width: auto;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      line-height:1;
+      overflow-x:hidden;
+
+
+  }
+
+    .container-faq {
+      padding: 2rem; /* Уменьшил отступы для мобильных устройств */
+      width: 100%; /* Ширина на мобильных устройствах будет 100% */
+      overflow-x:hidden;
+    }
+
+    .accordion .accordion-item {
+      border-radius: 20px; /* Уменьшил радиус скругления углов */
+      overflow-x:hidden;
+    }
+
+    .accordion button .icon {
+      top: 30%; /* Поднял иконку немного выше */
+      right: 10px; /* Уменьшил отступ справа */
+      overflow-x:hidden;
+    }
+
+    .accordion button .accordion-title {
+      padding-right: 100px; /* Добавил отступ справа для текста, чтобы избежать наложения на иконки */
+      white-space:initial;
+      overflow-x:hidden;
+    }
+
+    .accordion button[aria-expanded=true] + .accordion-content {
+      max-height: none; /* Отменяю максимальную высоту для контента */
+      padding: 10px; /* Увеличил отступы */
+    }
+
+    .accordion .accordion-content p {
+      margin: 1em 0; /* Уменьшил отступы */
+    }
+  }
+
+  @media only screen and (max-width: 300px) {
+
+    h1{
+      font-size: 100px;
+    }
+
+  }

@@ -1,0 +1,487 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic);
+
+body {
+  font-family: "Roboto";
+  overflow-x: hidden;
+}
+body.hidden {
+  overflow: hidden;
+
+}
+
+a {
+  color: #fffefe;
+  text-decoration: none;
+  font-size: 16px;
+  vertical-align: bottom;
+
+}
+
+.container {
+  max-width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.header {
+  margin: 10px;
+  position: relative;
+  padding: 20px 15px;
+  background-color: rgba(43, 18, 76, 0.6);
+  border: 2px solid rgb(211, 1, 19);
+  border-radius: 40px;
+}
+
+.header .nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header .menu {
+  display: flex;
+  align-items: center;
+}
+.header .item {
+  position: relative;
+  font-size: 14px;
+  line-height: 16px;
+  padding-bottom: 5px;
+}
+.header .item a {
+  transition: 0.3s;
+}
+.header .item:not(:last-child) {
+  margin-right: 20px;
+}
+.header .item::after {
+  content: "";
+  border-bottom: 3px solid rgba(248, 87, 87, 0.5);
+  border-radius: 40px;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0%;
+  transition: width 0.3s;
+}
+
+.header .item.active::after,
+.header .item:hover::after {
+  width: 100%;
+}
+
+
+
+.header .hamburger {
+  cursor: pointer;
+  display: none;
+  background-color: transparent;
+  width: 40px;
+  height: 20px;
+  margin-left: auto;
+}
+.header .hamburger span {
+  display: block;
+  width: 30px;
+  height: 3px;
+  background-color: #efeaea;
+}
+.header .hamburger span:not(:last-child) {
+  margin-bottom: 5px;
+}
+.header .hamburger span:nth-child(2) {
+  margin-left: auto;
+  transition: background-color 0.25s, transform 0.3s;
+}
+.header .hamburger span:nth-child(1),
+.header .hamburger span:nth-child(3) {
+  transition: transform 0.45s;
+}
+
+.header.mobile .menu {
+  pointer-events: auto;
+}
+.header.mobile .menu::before {
+  transform: translatex(0);
+  border-bottom-left-radius: 0;
+}
+.header.mobile .menu::after {
+  opacity: 1;
+}
+.header.mobile .menu .item {
+  transform: translatex(0);
+}
+.header.mobile .menu .item:nth-child(1) {
+  transition: transform 1s 0.08s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+}
+.header.mobile .menu .item:nth-child(2) {
+  transition: transform 1s 0.16s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+}
+.header.mobile .menu .item:nth-child(3) {
+  transition: transform 1s 0.24s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+}
+.header.mobile .menu .item:nth-child(4) {
+  transition: transform 1s 0.32s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+}
+.header.mobile .menu .item:nth-child(5) {
+  transition: transform 1s 0.4s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+}
+.header.mobile .menu .item:nth-child(6) {
+  transition: transform 1s 0.48s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+}
+.header.mobile .menu .item:nth-child(7) {
+  transition: transform 1s 0.56s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+}
+.header.mobile .menu .item:nth-child(8) {
+  transition: transform 1s 0.64s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+}
+.header.mobile .menu .item:nth-child(9) {
+  transition: transform 1s 0.72s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+}
+.header.mobile .menu .item:nth-child(10) {
+  transition: transform 1s 0.8s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+}
+.header.mobile .menu .item:nth-child(11) {
+  transition: transform 1s 0.88s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+}
+.header.mobile .menu .item:nth-child(12) {
+  transition: transform 1s 0.96s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+}
+.header.mobile .menu .item:nth-child(13) {
+  transition: transform 1s 1.04s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+}
+.header.mobile .menu .item:nth-child(14) {
+  transition: transform 1s 1.12s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+}
+.header.mobile .menu .item:nth-child(15) {
+  transition: transform 1s 1.2s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+}
+.header.mobile .menu .item:nth-child(16) {
+  transition: transform 1s 1.28s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+}
+.header.mobile .menu .item:nth-child(17) {
+  transition: transform 1s 1.36s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+}
+.header.mobile .menu .item:nth-child(18) {
+  transition: transform 1s 1.44s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+}
+.header.mobile .menu .item:nth-child(19) {
+  transition: transform 1s 1.52s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+}
+.header.mobile .menu .item:nth-child(20) {
+  transition: transform 1s 1.6s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+}
+.header.mobile .menu .item:nth-child(21) {
+  transition: transform 1s 1.68s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+}
+.header.mobile .menu .item:nth-child(22) {
+  transition: transform 1s 1.76s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+}
+.header.mobile .menu .item:nth-child(23) {
+  transition: transform 1s 1.84s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+}
+.header.mobile .menu .item:nth-child(24) {
+  transition: transform 1s 1.92s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+}
+.header.mobile .menu .item:nth-child(25) {
+  transition: transform 1s 2s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+}
+.header.mobile .menu .item:nth-child(26) {
+  transition: transform 1s 2.08s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+}
+.header.mobile .menu .item:nth-child(27) {
+  transition: transform 1s 2.16s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+}
+.header.mobile .menu .item:nth-child(28) {
+  transition: transform 1s 2.24s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+}
+.header.mobile .menu .item:nth-child(29) {
+  transition: transform 1s 2.32s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+}
+.header.mobile .menu .item:nth-child(30) {
+  transition: transform 1s 2.4s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+}
+.header.mobile .menu .item:nth-child(31) {
+  transition: transform 1s 2.48s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+}
+.header.mobile .menu .item:nth-child(32) {
+  transition: transform 1s 2.56s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+}
+.header.mobile .menu .item:nth-child(33) {
+  transition: transform 1s 2.64s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+}
+.header.mobile .menu .item:nth-child(34) {
+  transition: transform 1s 2.72s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+}
+.header.mobile .menu .item:nth-child(35) {
+  transition: transform 1s 2.8s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+}
+.header.mobile .menu .item:nth-child(36) {
+  transition: transform 1s 2.88s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+}
+.header.mobile .menu .item:nth-child(37) {
+  transition: transform 1s 2.96s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+}
+.header.mobile .menu .item:nth-child(38) {
+  transition: transform 1s 3.04s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+}
+.header.mobile .menu .item:nth-child(39) {
+  transition: transform 1s 3.12s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+}
+.header.mobile .menu .item:nth-child(40) {
+  transition: transform 1s 3.2s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+}
+.header.mobile .menu .item:nth-child(41) {
+  transition: transform 1s 3.28s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+}
+.header.mobile .menu .item:nth-child(42) {
+  transition: transform 1s 3.36s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+}
+.header.mobile .menu .item:nth-child(43) {
+  transition: transform 1s 3.44s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+}
+.header.mobile .menu .item:nth-child(44) {
+  transition: transform 1s 3.52s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+}
+.header.mobile .menu .item:nth-child(45) {
+  transition: transform 1s 3.6s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+}
+.header.mobile .menu .item:nth-child(46) {
+  transition: transform 1s 3.68s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+}
+.header.mobile .menu .item:nth-child(47) {
+  transition: transform 1s 3.76s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+}
+.header.mobile .menu .item:nth-child(48) {
+  transition: transform 1s 3.84s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+}
+.header.mobile .menu .item:nth-child(49) {
+  transition: transform 1s 3.92s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+}
+.header.mobile .menu .item:nth-child(50) {
+  transition: transform 1s 4s cubic-bezier(0.29, 1.4, 0.44, 0.96);
+}
+.header.mobile .hamburger {
+  z-index: 1000;
+}
+.header.mobile .hamburger span {
+  background-color: #fff;
+}
+.header.mobile .hamburger span:nth-child(2) {
+  transform: translateX(-20px);
+  background-color: transparent !important;
+}
+.header.mobile .hamburger span:nth-child(1) {
+  transform: translate(0%, 6px) rotate(315deg);
+}
+.header.mobile .hamburger span:nth-child(3) {
+  transform: translate(0%, -11px) rotate(-315deg);
+}
+
+@media (max-width: 800px) {
+  .header .hamburger {
+    display: block;
+  }
+  .header .nav {
+    position: relative;
+  }
+  .header .menu {
+    pointer-events: none;
+    z-index: 1000;
+    position: fixed;
+    right: 0;
+    top: 0;
+    overflow: hidden;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%; /* Увеличьте это значение для увеличения ширины меню */
+    height: 100vh;
+    padding-top: 60px;
+    padding-right: 30px;
+
+  }
+  .header .menu::before {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    transform: translate(100vw, 0);
+    transition: width 475ms ease-out, transform 450ms ease, border-radius 0.8s 0.1s ease;
+    border-bottom-left-radius: 100vw;
+    background-color: rgba(43, 18, 76, 0.5);
+    backdrop-filter: blur(5px);
+  }
+  .header .menu::after {
+    content: "";
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    opacity: 0;
+    transition: 0.5s;
+  }
+  .header .item {
+    text-transform: uppercase;
+    white-space: nowrap;
+    transform: translatex(100vw);
+    padding-bottom: 0;
+    margin-right: 0 !important;
+    width: 100%;
+  }
+  .header .item a {
+    width: 100%;
+    transition: background-color 0.3s;
+    text-decoration: none;
+    color: #fff;
+    text-align: right;
+    display: block;
+    font-size: 25px;
+    line-height: 45px;
+  }
+  .header .item::after {
+    display: none;
+  }
+  .header.mobile .item:hover::after {
+    width: 50%;
+  }
+}
+
+
+/* ========================================================== NAV-MENU ========================================================== */
+
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+.nav__login {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 100%;
+}
+
+.nav__login ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav__login li {
+  margin-left: 1rem;
+  display: flex;
+  align-items: center;
+  margin-right: 1rem;
+}
+
+#loginButton,
+#toggleButton {
+  display: flex;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  padding: 1px;
+}
+
+.login-icon {
+  width: 24px;
+  height: 24px;
+}
+
+.nav__icon {
+  width: 80px;
+  height: 50px;
+}
+
+.white-icon {
+  filter: invert(100%);
+}
+
+/* ========================================================== Language ========================================================== */
+
+.language-dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.language-list {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1;
+  background-color: #ffffffd5;
+  /* background-color: #fff; */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  padding: 10px;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-10px);
+  transition: opacity 0.3s, transform 0.3s, visibility 0.3s;
+  border: 2px solid rgb(211, 1, 19);;
+}
+
+.language-list.active {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.language-list .listul {
+  display: flex;
+  flex-direction: column; /* Измените направление flex на column */
+  padding: 0;
+  margin: 0;
+}
+
+.language-list .listli {
+  margin-bottom: 5px;
+}
+
+.language-list .lista {
+  text-decoration: none;
+  font-size: 18px;
+  color: #333;
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  transition: background-color 0.3s;
+}
+
+.language-list .flag {
+  margin-right: 5px;
+  width: 20px;
+  height: 15px;
+}
+
+.language-list .lista span {
+  flex-grow: 1; /* Растягиваем блок span, чтобы текст занимал доступное пространство */
+}
+
+.language-list .hovera:hover {
+  background-color: #4d4d4d3d;
+  border-radius: 20px;
+
+}
+
+.language-dropdown button {
+  border: none;
+  background: none;
+  padding: 0;
+  cursor: pointer;
+}
+

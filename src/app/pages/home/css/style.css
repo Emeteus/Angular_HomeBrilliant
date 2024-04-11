@@ -1,0 +1,58 @@
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+
+
+.nav__login {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100%;
+}
+
+.nav__login ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav__login li {
+    margin-left: 1rem;
+    display: flex;
+    align-items: center;
+    margin-right: 1rem;
+}
+
+#loginButton,
+#toggleButton {
+    display: flex;
+    align-items: start;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    padding: 1px;
+}
+
+.login-icon {
+    width: 24px;
+    height: 24px;
+}
+
+.nav__icon {
+    width: 80px;
+    height: 50px;
+}
+
+.white-icon {
+    filter: invert(100%);
+}

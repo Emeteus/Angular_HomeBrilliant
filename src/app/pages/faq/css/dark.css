@@ -1,0 +1,181 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+}
+
+body.dark {
+
+
+}
+body.dark h2 {
+  color: white;
+}
+
+body.dark h1 {
+  color: white;
+
+}
+
+input:checked + .slider::before {
+  transform: translateX(26px);
+}
+
+body.dark .invert-color {
+  filter: invert(1);
+}
+
+#toggleButton {
+  margin-left: auto;
+}
+
+/* ======================================== ADDITIONAL DARK ======================================== */
+body.dark .dark-head {
+  position: relative;
+  padding: 20px 15px;
+  background-color: rgba(43, 18, 76, 0.6);
+  border: 2px solid rgb(241, 144, 109);
+  border-radius: 40px;
+}
+
+body.dark .dark-nav{
+  content: "";
+  border-bottom: 2px solid rgb(241, 144, 109);
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0%;
+  transition: width 0.3s;
+}
+
+
+
+body.dark .dark-line{
+  font-family: 'Dancing Script', cursive;
+  font-weight: 700;
+  color: rgb(255, 255, 255);
+  background-color: rgba(43, 18, 76, 0.5);
+  font-size: 35px;
+  line-height: 60px;
+  text-align: center;
+  /* border-radius: 100px;
+  border: 2px solid rgb(241, 144, 109);
+  margin-left: 10%;
+  margin-right: 10%; */
+  border-top: 1px solid rgb(241, 144, 109);
+  border-bottom: 1px solid rgb(241, 144, 109);
+
+}
+
+body.dark .dark-kard{
+  background-color: #222831;
+
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(43, 18, 76, 0.6);
+  color: white;
+  border: 2px solid rgb(241, 144, 109); ;
+  border-radius: 40px;
+}
+
+body.dark .dark-border{
+  border: 2px solid rgb(241, 144, 109);
+}
+
+body.dark .dark-list{
+  border: 2px solid rgb(241, 144, 109);
+  background-color: #555555d5;
+}
+
+body.dark .dark-lista{
+  color: #fff;
+}
+
+/* ============================================================ */
+body.dark .bgcolor{
+  color: rgb(255, 255, 255);
+  background-color: #555555fa;
+  border-left: 4px solid rgb(241, 144, 109);
+  border-right: 4px solid rgb(241, 144, 109);
+
+}
+
+body.dark .color{
+  color: rgb(241, 144, 109);
+  font-weight: bolder;
+}
+
+body.dark .box-dark {
+  width: 350px;
+  height: 400px;
+  border: 3px solid rgb(241, 144, 109);
+  border-radius: 40px;
+  background-color: #555555fa;
+  margin: 10px;
+  display: inline-block;
+  justify-content: center;
+}
+
+body.dark .color-dark{
+  filter: invert(100%);
+}
+
+.accordion button:hover{
+  cursor: pointer;
+  color: rgb(241, 144, 109);
+}
+
+.accordion button:focus::after{
+  cursor: pointer;
+  color: rgb(241, 144, 109);
+}
+
+body.dark .accordion-item {
+  border: 3px solid rgb(241, 144, 109);
+  border-radius: 40px;
+  background-color: rgba(43, 18, 76, 0.5);
+}
+
+body.dark .accordion .accordion-item button[aria-expanded=true] {
+  border-bottom: 3px solid rgb(241, 144, 109);
+}
+
+body.dark .accordion button:hover, .accordion button:focus {
+  cursor: pointer;
+  color: rgb(241, 144, 109);
+}
+
+body.dark .accordion button[aria-expanded=true] {
+  color: rgb(241, 144, 109);
+}
+
+body.dark .dark-lista{
+  color: #fff;
+}
+
+body.dark .login-button-link {
+  display: inline-flex;
+  align-items: center;
+  border: none;
+  background-color: transparent;
+  color: rgb(241, 144, 109);
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+body.dark .login-dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #555555d5;
+  border: 2px solid rgb(241, 144, 109);
+  border-radius: 10px;
+  min-width: 160px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}

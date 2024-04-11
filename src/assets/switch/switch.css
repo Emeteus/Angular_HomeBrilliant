@@ -1,0 +1,362 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  /*background-image: url('theme/bg_white.png');*/
+  background-color: #d6cfbd;
+  overflow-x: hidden;
+  transition: background 0.2s linear;
+  background-attachment: fixed;
+
+}
+
+body.dark {
+  /*background-image: url('theme/bg_black.png');*/
+  background-color: rgb(13, 17, 23);
+  color: white;
+  transition: background 0.2s linear;
+  background-attachment: fixed;
+
+}
+
+body.dark h2 {
+  color: white;
+}
+
+body.dark h1 {
+  color: white;
+
+}
+
+input:checked + .slider::before {
+  transform: translateX(26px);
+}
+
+body.dark .invert-color {
+  filter: invert(1);
+}
+
+#toggleButton {
+  margin-left: auto;
+}
+
+/* ======================================== ADDITIONAL DARK ======================================== */
+body.dark .dark-head {
+  position: relative;
+  padding: 20px 15px;
+  background-color: rgba(43, 18, 76, 0.6);
+  border: 2px solid rgb(241, 144, 109);
+  border-radius: 40px;
+}
+
+body.dark .boxik{
+  background-color: rgba(43, 18, 76, 0.6);
+  /*border: 2px solid rgb(211, 1, 19);*/
+  border: 2px solid rgb(241, 144, 109);
+  border-radius: 40px;
+}
+
+body.dark .shop__thumb{
+  border: 2px solid rgb(241, 144, 109);
+}
+
+body.dark .dark-nav{
+  content: "";
+  border-bottom: 2px solid rgb(241, 144, 109);
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0%;
+  transition: width 0.3s;
+}
+
+body.dark .dark-card{
+  border: 2px solid rgb(241, 144, 109);
+  width: 300px;
+  aspect-ratio: 1/1;
+  color: #fff;
+  border-radius: 20px;
+  box-shadow: 0 6.7px 5.3px rgba(0, 0, 0, 0.03),
+  0 22.3px 17.9px rgba(0, 0, 0, 0.05);
+}
+body.dark .dark-open{
+  text-transform: uppercase;
+  font-size: 25px;
+  border-radius: 30px;
+  background-color: rgba(43, 18, 76, 0.6);;
+  border: 2px solid  rgb(241, 144, 109);
+  color: #ffffff;
+  outline: none;
+  cursor: pointer;
+  grid-area: 1 / 2 / span 1 / span 1;
+}
+/*=========================================== INDEX ===========================================================================*/
+body.dark .dark-head {
+  position: relative;
+  padding: 20px 15px;
+  background-color: rgba(43, 18, 76, 0.6);
+  border: 2px solid rgb(241, 144, 109);
+  border-radius: 40px;
+}
+
+body.dark .dark-nav{
+  content: "";
+  border-bottom: 2px solid rgb(241, 144, 109);
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0%;
+  transition: width 0.3s;
+}
+
+body.dark .dark-card{
+  border: 2px solid rgb(241, 144, 109);
+  width: 300px;
+  aspect-ratio: 1/1;
+  color: #fff;
+  border-radius: 20px;
+  box-shadow: 0 6.7px 5.3px rgba(0, 0, 0, 0.03),
+  0 22.3px 17.9px rgba(0, 0, 0, 0.05);
+}
+body.dark .dark-open{
+  text-transform: uppercase;
+  font-size: 25px;
+  border-radius: 30px;
+  background-color: rgba(43, 18, 76, 0.6);;
+  border: 2px solid  rgb(241, 144, 109);
+  color: #ffffff;
+  outline: none;
+  cursor: pointer;
+  grid-area: 1 / 2 / span 1 / span 1;
+}
+
+
+body.dark .dark-box{
+  width: 80%;
+  background-color: rgba(0,0,2, 0.8); /* Add alpha channel for transparency */
+  border: 2px solid rgb(241, 144, 109);
+  border-radius: 40px;
+  padding: 20px;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+body.dark .dark-line{
+  font-weight: 700;
+  color: rgb(255, 255, 255);
+  background-color: rgba(43, 18, 76, 0.5);
+  font-size: 35px;
+  line-height: 60px;
+  text-align: center;
+  /* border-radius: 100px;
+  border: 2px solid rgb(241, 144, 109);
+  margin-left: 10%;
+  margin-right: 10%; */
+  border-top: 1px solid rgb(241, 144, 109);
+  border-bottom: 1px solid rgb(241, 144, 109);
+
+}
+
+body.dark .color-7 {
+  background-image: linear-gradient(to right, #6253e1, #852D91, #A3A1FF, #F24645);
+  box-shadow: 0 4px 15px 0 rgba(126, 52, 161, 0.75);
+}
+
+body.dark .dark-list{
+  border: 2px solid rgb(241, 144, 109);
+  background-color: #555555d5;
+}
+
+body.dark .dark-lista{
+  color: #fff;
+}
+
+body.dark .dark-border{
+  border: 2px solid rgb(241, 144, 109);
+}
+
+body.dark .login-button-link {
+  display: inline-flex;
+  align-items: center;
+  border: none;
+  background-color: transparent;
+  color: rgb(209, 3, 3);
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+body.dark .login-dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #555555d5;
+  border: 2px solid rgb(241, 144, 109);
+  border-radius: 10px;
+  min-width: 160px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+body.dark .pcolor{
+  color: rgb(241, 144, 109);
+}
+
+/*=========================================== END INDEX ===========================================================================*/
+
+
+
+/*=========================================== ABOUT ===========================================================================*/
+
+body.dark .box-left-dark {
+  background-color: rgba(43, 18, 76, 0.5);
+  border: 2px solid rgb(241, 144, 109);
+  padding-left: 40px;
+  padding-right: 35px;
+  border-radius: 20px; /* Adjust border-radius as needed */
+  margin-bottom: 20px; /* Add space between boxes */
+
+}
+
+body.dark .box-right-dark {
+  background-color: rgba(43, 18, 76, 0.5);
+  border: 2px solid rgb(241, 144, 109);
+  padding-left: 40px;
+  padding-right: 35px;
+  border-radius: 20px; /* Adjust border-radius as needed */
+  margin-bottom: 20px; /* Add space between boxes */
+
+}
+
+body.dark .color-dark{
+  color:rgb(241, 144, 109);
+}
+
+body.dark .dark-list{
+  border: 2px solid rgb(241, 144, 109);
+  background-color: #555555d5;
+}
+
+body.dark .dark-lista{
+  color: #fff;
+}
+
+body.dark .ul-name-dark{
+  font-family: 'Dancing Script', cursive;
+  font-size: 30px;
+  margin-left: 10px;
+  color: rgb(241, 144, 109) ;
+}
+
+body.dark .login-button-link {
+  display: inline-flex;
+  align-items: center;
+  border: none;
+  background-color: transparent;
+  color: rgb(209, 3, 3);
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+body.dark .login-dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #555555d5;
+  border: 2px solid rgb(241, 144, 109);
+  border-radius: 10px;
+  min-width: 160px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+body.dark .box3 {
+  position: relative;
+  background-color: rgba(43, 18, 76, 0.5);
+  border: 5px solid rgb(241, 144, 109);
+
+}
+
+body.dark .box2 {
+  position: relative;
+  background-color: rgba(43, 18, 76, 0.5);
+  border: 5px solid rgb(241, 144, 109);
+
+}
+
+body.dark .prod{
+  color: rgb(241, 144, 109);
+}
+
+body.dark .prod2{
+  color: rgb(241, 144, 109);
+}
+
+body.dark .card .span {
+  font-weight: 400;
+  font-size: 15px;
+  color: rgb(241, 144, 109);
+}
+
+body.dark .slider-container {
+
+  border: 3px solid rgb(241, 144, 109);
+}
+/*=========================================== END ABOUT ===========================================================================*/
+/*===========================================  PRIVACY ===========================================================================*/
+
+
+body.dark .login-button-link {
+  display: inline-flex;
+  align-items: center;
+  border: none;
+  background-color: transparent;
+  color: rgb(209, 3, 3);
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+body.dark .login-dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #555555d5;
+  border: 2px solid rgb(241, 144, 109);
+  border-radius: 10px;
+  min-width: 160px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+
+body.dark .bgcolor{
+  background-color: #545454;
+  color: rgb(255, 255, 255);
+  border-left:3px solid rgb(241, 144, 109);
+  border-right:3px solid rgb(241, 144, 109);
+}
+
+body.dark .licolor{
+  color: rgb(241, 144, 109);
+}
+
+
+body.dark .margin1{
+  margin-left: 90px;
+  margin-right: 100px;
+  color: rgb(255, 255, 255);
+}
+
+body.dark .color{
+  color:rgb(241, 144, 109);
+}
+/*=========================================== END PRIVACY ===========================================================================*/
+/*=========================================== FAQ ===========================================================================*/
+
+/*=========================================== END FAQ ===========================================================================*/
+

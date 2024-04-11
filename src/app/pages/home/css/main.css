@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css2?family=Pattaya&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Figtree&display=swap");
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+main.dark .dark-button7{
+  background-image: linear-gradient(to right, #6253e1, #852D91, #A3A1FF, #F24645);
+  box-shadow: 0 4px 15px 0 rgba(126, 52, 161, 0.75);
+}
+
+/* h1 {
+    font-family: 'Dancing Script', cursive;
+    font-size: 100px;
+    line-height: 65px;
+    text-align: center;
+    width: 60%;
+    height: 40vh;
+
+    margin: 0 auto;
+
+} */
+
+
+
+h1 {
+    font-family: 'Pattaya', sans-serif;
+    font-size: 80px;
+    line-height: 65px;
+    text-align: center;
+    max-width: 60%;
+    min-width: 200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+.under-text {
+    font-family: 'Pattaya', sans-serif;
+    font-size: 30px;
+    text-align: center;
+    margin: 0 auto;
+    letter-spacing: 6px;
+
+}
+
+
+.line{
+    font-family: 'Pattaya', sans-serif;
+    letter-spacing: 4px;
+    color: rgb(255, 255, 255);
+    background-color: rgba(43, 18, 76, 0.5);
+    font-size: 35px;
+    line-height: 60px;
+    text-align: center;
+    /* border-radius: 100px; */
+    /* border: 2px solid rgb(211, 1, 19); */
+    /* margin-left: 10%;
+    margin-right: 10%; */
+    border-top: 1px solid rgb(211, 1, 19);
+    border-bottom: 1px solid rgb(211, 1, 19);
+}
+
+/* ===================================================== START =================================================== */
+.box2-index {
+    position: relative;
+    width: 45%;
+    min-width: 30vh;
+    display: flex;
+    flex-direction: column; /*для вертикального расположения элементов */
+    justify-content: flex-start; /*для выравнивания слева */
+    padding-left: 30px; /*отступ слева */
+
+}
+
+.text-pbox{
+    text-align: justify;
+}
+
+.h2text-box2 {
+    margin-top: 0;
+    text-align: center;
+}
+
+.box3-index {
+    position: relative;
+    width: 45%;
+    min-width: 30vh;
+    margin-left: auto; /* выравнивание по правой стороне страницы */
+    display: flex;
+    flex-direction: column; /* для вертикального расположения элементов */
+    justify-content: flex-end; /* для выравнивания по нижнему краю */
+    padding-right: 30px;
+}
+
+.h2text-box3 {
+    margin-top: 0;
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    .box2-index, .box3-index {
+        width: 45%;
+    }
+
+    .box2-index {
+        justify-content: flex-start;
+        padding-left: 30px;
+    }
+
+    .box3-index {
+        margin-left: auto;
+        justify-content: flex-end;
+        padding-right: 30px;
+    }
+}
+
+@media (max-width: 767px) {
+    .box2-index, .box3-index {
+        width: 100%;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .box3-index {
+        margin-left: 0;
+    }
+}
+
+/* ===================================================== END ===================================================== */
+.box {
+    position: relative;
+    width: 100%;
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+}
+
+.box::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: url('../../../../assets/img/bg/photo1.png');
+    background-size: cover;
+    filter: blur(2px);
+    z-index: -1;
+
+}
+
+.mini-box {
+    width: 80%;
+    background-color: rgba(214, 205, 188, 0.8);
+    border: 2px solid rgb(211, 1, 19);
+    border-radius: 40px;
+    padding: 20px;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+.h2text {
+    font-family: 'Pattaya', sans-serif;
+    font-size: 45px;
+    text-align: center;
+    margin-bottom: 30px;
+
+}
+
+@media (max-width: 800px) {
+    .box::before {
+        background-image: url('../../../../assets/img/bg/mobile-photo1.jpg');
+        /* ../../img/bg/mobile-photo1.jp */
+        /* ../../img/bg/photo1.png */
+    }
+
+    .mini-box {
+        width: 90%;
+    }
+
+    .h2text {
+        font-size: 25px;
+    }
+}
+
+/* ===================================================== END ===================================================== */
+
+
+.box4 {
+    position: relative;
+    width: 100%;
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+}
+
+.box4::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: url('../../../../assets/img/bg/photo2.PNG');
+    background-size: cover;
+    filter: blur(2px);
+    z-index: -1;
+
+}
+
+.mini-box4 {
+    width: 80%;
+    background-color: rgba(214, 205, 188, 0.8);
+    border: 2px solid rgb(211, 1, 19);
+    border-radius: 40px;
+    padding: 20px;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+.h2text {
+    font-family: 'Pattaya', sans-serif;
+    font-size: 45px;
+    text-align: center;
+    margin-bottom: 30px;
+
+}
+
+@media (max-width: 800px) {
+    .box4::before {
+        /*background-image: url('../../../../assets/img/bg/mobile-photo2.jpg');*/
+      background-image: url('../../../../assets/img/bg/mobile-photo2.jpg');
+    }
+
+    .mini-box4 {
+        width: 90%;
+    }
+
+    .h2text {
+        font-size: 25px;
+    }
+}
+
+.ptext{
+   font-size: 20px;
+}
+
+.pcolor{
+    color: rgb(211, 1, 19);
+    font-size: 30px;
+}
+

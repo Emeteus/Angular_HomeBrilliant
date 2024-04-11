@@ -1,0 +1,52 @@
+/* Style for the button container */
+.login-button-container {
+    display: flex;
+    align-items: center;
+}
+
+/* Style for the button */
+.login-button-link {
+    display: inline-flex;
+    align-items: center;
+    border: none;
+    background-color: transparent;
+    color: rgb(209, 3, 3);
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+
+
+/* Style for the dropdown container */
+.login-dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Style for the dropdown content */
+.login-dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #ffffffd5;
+    border: 2px solid rgb(211, 1, 19);
+    border-radius: 10px;
+    min-width: 160px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+/* Style for the dropdown links */
+.login-dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+/* Style for the dropdown links on hover */
+.login-dropdown-content a:hover {
+    background-color: #4d4d4d3d;
+}

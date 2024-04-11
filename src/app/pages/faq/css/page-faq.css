@@ -1,0 +1,201 @@
+#main {
+  margin: 50px 0;
+}
+
+#main #faq .card {
+  margin-bottom: 30px;
+  border: 0;
+}
+
+#main #faq .card .card-header {
+  border: 0;
+  -webkit-box-shadow: 0 0 20px 0 rgba(213, 213, 213, 0.5);
+          box-shadow: 0 0 20px 0 rgba(213, 213, 213, 0.5);
+  border-radius: 2px;
+  padding: 0;
+}
+
+#main #faq .card .card-header .btn-header-link {
+  color: #fff;
+  display: block;
+  text-align: left;
+  background: #FFE472;
+  color: #222;
+  padding: 20px;
+}
+
+#main #faq .card .card-header .btn-header-link:after {
+  content: "\f107";
+  font-family: 'Font Awesome 5 Free';
+  font-weight: 900;
+  float: right;
+}
+
+#main #faq .card .card-header .btn-header-link.collapsed {
+  background: #A541BB;
+  color: #fff;
+}
+
+#main #faq .card .card-header .btn-header-link.collapsed:after {
+  content: "\f106";
+}
+
+#main #faq .card .collapsing {
+  background: #FFE472;
+  line-height: 30px;
+}
+
+#main #faq .card .collapse {
+  border: 0;
+}
+
+#main #faq .card .collapse.show {
+  background: #FFE472;
+  line-height: 30px;
+  color: #222;
+}
+
+.main{
+  margin-left: 200px;
+  margin-right: 200px;
+  font-size: 20px;
+  
+}
+
+
+.bgcolor{
+  color: black;
+  background-color: #fff;
+  border-left: 4px solid red;
+  border-right: 4px solid red;
+  margin-left: 200px;
+  margin-right: 200px;
+}
+
+.color {
+  color: red;
+  font-weight: bolder;
+  margin-left: 5px; /* Add some margin to separate the text */
+}
+
+.h11{
+  display: flex;
+  align-items: center;
+}
+
+.margin2{
+  margin-left: 100px;
+
+}
+.center{
+  text-align: center;
+}
+
+@media only screen and (max-width: 1300px) {
+  /* Adjust margins for all elements */
+  .main,
+  .bgcolor,
+  .color,
+  .margin2 {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  /* Remove borders for mobile */
+  .bgcolor {
+    border-left: 2px solid red;
+    border-right: 2px solid red;
+  }
+
+  /* Additional mobile-specific styles if needed */
+  /* For example, you might want to make the font size smaller for better readability on small screens */
+  .main {
+    font-size: 16px;
+  }
+
+  body {
+    overflow-x: hidden; /* Prevent horizontal scrolling on small screens */
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  /* Adjust margins for all elements */
+  .main,
+  .bgcolor,
+  .color,
+  .margin2 {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  /* Remove borders for mobile */
+  .bgcolor {
+    border-left: 2px solid red;
+    border-right: 2px solid red;
+  }
+
+  /* Additional mobile-specific styles if needed */
+  /* For example, you might want to make the font size smaller for better readability on small screens */
+  .main {
+    font-size: 16px;
+  }
+
+  body {
+    overflow-x: hidden; /* Prevent horizontal scrolling on small screens */
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  /* Adjust margins for all elements */
+  .main,
+  .bgcolor,
+  .color,
+  .margin2 {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  /* Remove borders for mobile */
+  .bgcolor {
+    border-left: 2px solid red;
+    border-right: 2px solid red;
+  }
+
+  /* Additional mobile-specific styles if needed */
+  /* For example, you might want to make the font size smaller for better readability on small screens */
+  .main {
+    font-size: 16px;
+  }
+
+  body {
+    overflow-x: hidden; /* Prevent horizontal scrolling on small screens */
+  }
+}
+
+@media only screen and (max-width: 300px) {
+  /* Adjust margins for all elements */
+  .main,
+  .bgcolor,
+  .color,
+  .margin2 {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+
+  /* Remove borders for mobile */
+  .bgcolor {
+    border-left: 2px solid red;
+    border-right: 2px solid red;
+  }
+
+  /* Additional mobile-specific styles if needed */
+  /* For example, you might want to make the font size smaller for better readability on small screens */
+  .main {
+    font-size: 16px;
+  }
+
+  body {
+    overflow-x: hidden; /* Prevent horizontal scrolling on small screens */
+  }
+}

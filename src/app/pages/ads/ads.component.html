@@ -1,0 +1,27 @@
+<div class="container">
+  <h1>Добавить объявление о продаже дома</h1>
+  <form id="adForm">
+    <label for="city">Город:</label>
+    <select id="city" name="city">
+      <option value="Moscow">Москва</option>
+      <option value="Saint Petersburg">Санкт-Петербург</option>
+      <option value="Kazan">Казань</option>
+      <option value="Novosibirsk">Новосибирск</option>
+    </select>
+    <label for="address">Адрес:</label>
+    <input type="text" id="address" name="address" placeholder="Введите адрес">
+    <label for="houseNumber">Номер дома:</label>
+    <input type="text" id="houseNumber" name="houseNumber" placeholder="Введите номер дома">
+    <label for="phone">Номер телефона:</label>
+    <input type="tel" id="phone" name="phone" placeholder="Введите номер телефона">
+    <label>Тип объявления:</label>
+    <label><input type="radio" name="adType" value="Продажа" checked> Продажа</label>
+    <label><input type="radio" name="adType" value="Аренда"> Аренда</label>
+    <label for="description">Описание:</label>
+    <textarea id="description" name="description" rows="4" cols="50" style="resize: none;"></textarea>
+    <label for="images">Фотографии:</label>
+    <input type="file" id="images" name="images" accept="image/*" multiple>
+    <div id="imagePreview" class="image-preview"></div>
+    <button type="submit">Добавить объявление</button>
+  </form>
+</div>

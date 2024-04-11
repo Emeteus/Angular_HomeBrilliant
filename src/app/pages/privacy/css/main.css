@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Figtree&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Hind:300,400&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Pattaya&display=swap');
+
+.body {
+  padding: 0;
+  font-size: 20px;
+}
+main{
+  font-family: 'Figtree', sans-serif;
+}
+
+.bgcolor {
+  background-color: #ffffff;
+  color: black;
+  border-left: 3px solid #ff0000;
+  border-right: 3px solid #ff0000;
+}
+
+.licolor {
+  color: #ff0000;
+}
+
+.h1 {
+  font-family: 'Pattaya', sans-serif;
+  font-size: 50px;
+  line-height: 6px;
+  text-align: center;
+  max-width: 100%;
+  min-width: auto;
+  margin: 0 auto;
+
+  align-items: center;
+  line-height: 1;
+  justify-content: center;
+}
+
+.color {
+  color: #ff0000;
+}
+
+.p-war,
+.p-ware {
+  font-size: 20px;
+  font-weight: bolder;
+}
+
+.p-ware {
+  text-align: center;
+}
+
+.bold {
+  font-weight: bolder;
+}
+
+/* Responsive Design */
+@media only screen and (max-width: 600px) {
+  .body {
+      margin-left: 20px;
+      margin-right: 20px;
+  }
+
+  .margin1,
+  .margin2,
+  .margin3 {
+      margin-left: 20px;
+      margin-right: 20px;
+  }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 900px) {
+  .body {
+      margin-left: 50px;
+      margin-right: 50px;
+  }
+
+  .margin1 {
+      margin-left: 50px;
+      margin-right: 50px;
+  }
+
+  .margin2 {
+      margin-left: 80px;
+      margin-right: 80px;
+  }
+
+  .margin3 {
+      margin-left: 30px;
+      margin-right: 80px;
+  }
+}
+
+@media only screen and (min-width: 901px) {
+  .body {
+      margin-left: 100px;
+      margin-right: 100px;
+  }
+
+  .margin1 {
+      margin-left: 90px;
+      margin-right: 100px;
+  }
+
+  .margin2 {
+      margin-left: 120px;
+      margin-right: 120px;
+  }
+
+  .margin3 {
+      margin-left: 50px;
+      margin-right: 130px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .h1 {
+      font-size: 30px;
+  }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 900px) {
+  .h1 {
+      font-size: 36px;  }
+}
+
+@media only screen and (min-width: 901px) {
+  .h1 {
+      font-size: 50px;
+  }
+}

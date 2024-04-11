@@ -1,0 +1,31 @@
+main.dark h2 {
+  color: white;
+}
+
+main.dark .notfound .notfound-404 h1 {
+  font-family: 'Montserrat', sans-serif;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  font-size: 252px;
+  font-weight: 900;
+  margin: 0px;
+  color: rgb(169, 105, 83);
+  text-transform: uppercase;
+  letter-spacing: -40px;
+  margin-left: -20px;
+}
+main.dark .notfound .notfound-404 h3 {
+  font-family: 'Cabin', sans-serif;
+  position: relative;
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin: 0px;
+  letter-spacing: 3px;
+  padding-left: 6px;
+}

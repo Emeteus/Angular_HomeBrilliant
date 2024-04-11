@@ -1,0 +1,103 @@
+* {
+  box-sizing: border-box;
+}
+
+
+main.dark h2 {
+  color: white;
+}
+
+main.dark h1 {
+  color: white;
+
+}
+
+input:checked + .slider::before {
+  transform: translateX(26px);
+}
+
+main.dark .invert-color {
+  filter: invert(1);
+}
+
+#toggleButton {
+  margin-left: auto;
+}
+
+/* ======================================== ADDITIONAL DARK ======================================== */
+main.dark .dark-head {
+  position: relative;
+  padding: 20px 15px;
+  background-color: rgba(43, 18, 76, 0.6);
+  border: 2px solid rgb(241, 144, 109);
+  border-radius: 40px;
+}
+
+main.dark .dark-nav{
+  content: "";
+  border-bottom: 2px solid rgb(241, 144, 109);
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: width 0.3s;
+}
+
+
+
+main.dark .dark-line{
+  font-family: 'Dancing Script', cursive;
+  font-weight: 700;
+  color: rgb(255, 255, 255);
+  background-color: rgba(43, 18, 76, 0.5);
+  font-size: 35px;
+  line-height: 60px;
+  text-align: center;
+  /* border-radius: 100px;
+  border: 2px solid rgb(241, 144, 109);
+  margin-left: 10%;
+  margin-right: 10%; */
+  border-top: 1px solid rgb(241, 144, 109);
+  border-bottom: 1px solid rgb(241, 144, 109);
+
+}
+
+main.dark .dark-kard{
+  background-color: #222831;
+
+  /*border-radius: 5px;*/
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(43, 18, 76, 0.6);
+  color: white;
+  border: 2px solid rgb(241, 144, 109); ;
+  border-radius: 40px;
+}
+
+main.dark .dark-border{
+  border: 2px solid rgb(241, 144, 109);
+}
+
+
+/* ============================================================ */
+
+
+main.dark form
+{
+
+    border: 2px solid rgb(241, 144, 109);
+
+}
+
+main.dark form .form-control option
+{
+  background-color: rgb(223, 223, 223);
+  color: black;
+}
+
+
+main.dark .dark-button7{
+  background-image: linear-gradient(to right, #6253e1, #852D91, #A3A1FF, #F24645);
+  box-shadow: 0 4px 15px 0 rgba(126, 52, 161, 0.75);
+}

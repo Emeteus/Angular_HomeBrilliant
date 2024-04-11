@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Figtree&display=swap");
+
+
+
+footer {
+  font-family: Roboto;
+  position: absolute;
+  left: auto;
+  right: 0;
+  background: #111;
+  padding-top: 0; /* Уменьшен верхний отступ */
+  color: #fff;
+}
+
+.privacy{
+  background: transparent;
+  font-size: 12px;
+  color: #7440b8;
+}
+
+.privacy:hover{
+  color: #ffffff;
+
+}
+
+.footer-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.footer-content h3 {
+  font-size: 40px; /* Уменьшен размер шрифта */
+  font-weight: 500;
+  text-transform: capitalize;
+  line-height: 10px; /* Уменьшена высота строки */
+}
+
+.footer-content p {
+  max-width: 400px; /* Уменьшена максимальная ширина */
+  margin: 10px auto;
+  line-height: 24px; /* Уменьшена высота строки */
+  font-size: 12px; /* Уменьшен размер шрифта */
+  color: #cacdd2;
+}
+
+.socials {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem 0 2rem 0; /* Уменьшен отступ */
+}
+
+.socials li {
+  margin: 0 8px; /* Уменьшен отступ */
+}
+
+.socials a {
+  text-decoration: none;
+  color: #fff;
+  border: 1px solid white;
+  padding: 4px; /* Уменьшено заполнение */
+  border-radius: 50%;
+}
+
+.socials a i {
+  font-size: 1rem; /* Уменьшен размер шрифта */
+  width: 16px; /* Уменьшена ширина */
+  transition: color .4s ease;
+}
+
+.socials a:hover i {
+  color: aqua;
+}
+
+.footer-bottom{
+  background: #000;
+  width: 100vw;
+  padding: 1px;
+  padding-bottom: 1px;
+  text-align: center;
+}
+
+.footer-bottom p {
+  font-size: 14px; /* Уменьшен размер шрифта */
+  word-spacing: 1px; /* Уменьшено расстояние между словами */
+  text-transform: capitalize;
+  text-align: center; /* Выравниваем текст по центру */
+}
+
+
+.footer-bottom p a {
+  color: #7440b8;
+  font-size: 14px; /* Уменьшен размер шрифта */
+  text-decoration: none;
+}
+
+.footer-bottom span {
+  text-transform: uppercase;
+  opacity: .4;
+  font-weight: 200;
+}
+
+.footer-menu {
+  float: right;
+}
+
+.footer-menu ul {
+  display: flex;
+  padding: 0; /* Увеличение расстояния между пунктами */
+}
+
+.footer-menu ul li {
+  padding-right: 8px; /* Уменьшено правое заполнение */
+  display: block;
+}
+
+.footer-menu ul li a {
+  color: #dbd4c2;
+  text-decoration: none;
+  font-size: 14px; /* Уменьшен размер шрифта */
+}
+
+.footer-menu ul li a:hover {
+  color: #7440b8;
+}
+
+@media (max-width:500px) {
+  .footer-menu ul {
+    display: flex;
+    margin-top: 8px; /* Уменьшен верхний отступ */
+    margin-bottom: 16px; /* Уменьшен нижний отступ */
+  }
+}
+
+.footer-h3{
+  font-family: 'Dancing Script', cursive;
+  font: optional;
+  font-size: 80px;
+}
+
+
+.flex-center {
+  width: 50%;
+  min-height: 5vh;
+  display: flex;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  font-size: 7px;
+  align-items: center;
+}
+
+.icon-3d {
+  padding: 10px;
+  animation: icon3d 200ms 10;
+  color: #fff;
+}
+.icon-3d:hover {
+  animation: icon3d 200ms infinite;
+}
+
+@keyframes icon3d {
+  0% {
+    text-shadow: 5px 4px rgb(244, 67, 54), -5px -6px rgb(33, 150, 243);
+  }
+  25% {
+    text-shadow: -5px -6px rgb(244, 67, 54), 5px 4px rgb(33, 150, 243);
+  }
+  50% {
+    text-shadow: 5px -4px rgb(244, 67, 54), -8px 4px rgb(33, 150, 243);
+  }
+  75% {
+    text-shadow: -8px -4px rgb(244, 67, 54), -5px -4px rgb(33, 150, 243);
+  }
+  100% {
+    text-shadow: -5px 0 rgb(244, 67, 54), 5px -4px rgb(33, 150, 243);
+  }
+}
+

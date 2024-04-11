@@ -1,0 +1,361 @@
+
+<section class="space-50px">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-4 col-md-3">
+        <!--      <form>-->
+        <!--        <div class="well">-->
+        <!--          <div class="row">-->
+        <!--&lt;!&ndash;            <div class="col-sm-12">&ndash;&gt;-->
+        <!--&lt;!&ndash;&lt;!&ndash;              <div class="input-group">&ndash;&gt;&ndash;&gt;-->
+        <!--&lt;!&ndash;&lt;!&ndash;                <input type="text" class="form-control" placeholder="Search products...">&ndash;&gt;&ndash;&gt;-->
+        <!--&lt;!&ndash;                <span class="input-group-btn">&ndash;&gt;-->
+        <!--&lt;!&ndash;<button class="btn btn-primary" type="submit">&ndash;&gt;-->
+        <!--&lt;!&ndash;<i class="fa fa-search"></i>&ndash;&gt;-->
+        <!--&lt;!&ndash;</button>&ndash;&gt;-->
+        <!--&lt;!&ndash;</span>&ndash;&gt;-->
+        <!--&lt;!&ndash;&lt;!&ndash;              </div>&ndash;&gt;&ndash;&gt;-->
+        <!--&lt;!&ndash;            </div>&ndash;&gt;-->
+        <!--          </div>-->
+        <!--        </div>-->
+        <!--      </form>-->
+
+        <form class="shop__filter">
+
+          <h3 class="headline">
+            <span>Price</span>
+          </h3>
+          <div class="radio">
+            <input type="radio" name="shop-filter__price" id="shop-filter-price_1" value checked>
+            <label for="shop-filter-price_1">Under $25</label>
+          </div>
+          <div class="radio">
+            <input type="radio" name="shop-filter__price" id="shop-filter-price_2" value>
+            <label for="shop-filter-price_2">$25 to $50</label>
+          </div>
+          <div class="radio">
+            <input type="radio" name="shop-filter__price" id="shop-filter-price_3" value>
+            <label for="shop-filter-price_3">$50 to $100</label>
+          </div>
+          <div class="radio">
+            <input type="radio" name="shop-filter__price" id="shop-filter-price_4" value="specify">
+            <label for="shop-filter-price_4">Other (specify)</label>
+          </div>
+          <div class="form-group shop-filter__price">
+            <div class="row">
+              <div class="col-xs-4">
+                <label for="shop-filter-price_from" class="sr-only"></label>
+                <input id="shop-filter-price_from" type="number" min="0" class="form-control" placeholder="From" disabled>
+              </div>
+              <div class="col-xs-4">
+                <label for="shop-filter-price_to" class="sr-only"></label>
+                <input id="shop-filter-price_to" type="number" min="0" class="form-control" placeholder="To" disabled>
+              </div>
+              <div class="col-xs-4">
+                <button type="submit" class="btn btn-block btn-default" disabled>Go</button>
+              </div>
+            </div>
+          </div>
+
+          <h3 class="headline">
+            <span>Brand</span>
+          </h3>
+          <div class="checkbox">
+            <input type="checkbox" value id="shop-filter-checkbox_1" checked>
+            <label for="shop-filter-checkbox_1">Adidas</label>
+          </div>
+          <div class="checkbox">
+            <input type="checkbox" value id="shop-filter-checkbox_2">
+            <label for="shop-filter-checkbox_2">Calvin Klein</label>
+          </div>
+          <div class="checkbox">
+            <input type="checkbox" value id="shop-filter-checkbox_3">
+            <label for="shop-filter-checkbox_3">Columbia</label>
+          </div>
+          <div class="checkbox">
+            <input type="checkbox" value id="shop-filter-checkbox_4">
+            <label for="shop-filter-checkbox_4">Tommy Hilfiger</label>
+          </div>
+          <div class="checkbox">
+            <input type="checkbox" value id="shop-filter-checkbox_5">
+            <label for="shop-filter-checkbox_5">Not specified</label>
+          </div>
+
+          <h3 class="headline">
+            <span>Material</span>
+          </h3>
+          <div class="radio">
+            <input type="radio" name="shop-filter__radio" id="shop-filter-radio_1" value checked>
+            <label for="shop-filter-radio_1">100% Cotton</label>
+          </div>
+          <div class="radio">
+            <input type="radio" name="shop-filter__radio" id="shop-filter-radio_2" value>
+            <label for="shop-filter-radio_2">Bamboo</label>
+          </div>
+          <div class="radio">
+            <input type="radio" name="shop-filter__radio" id="shop-filter-radio_3" value>
+            <label for="shop-filter-radio_3">Leather</label>
+          </div>
+          <div class="radio">
+            <input type="radio" name="shop-filter__radio" id="shop-filter-radio_4" value>
+            <label for="shop-filter-radio_4">Polyester</label>
+          </div>
+          <div class="radio">
+            <input type="radio" name="shop-filter__radio" id="shop-filter-radio_5" value>
+            <label for="shop-filter-radio_5">Not specified</label>
+          </div>
+
+
+        </form>
+      </div>
+
+      <div class="col-sm-8 col-md-9">
+        <div class="boxik">
+          <ul class="shop__sorting ">
+            <li><a href="#">Popular</a></li>
+            <li><a href="#">Newest</a></li>
+            <li><a href="#">Bestselling</a></li>
+            <li><a href="#">Price (low)</a></li>
+            <li><a href="#">Price (high)</a></li>
+          </ul>
+        </div>
+        <div class="space-30px"></div>
+        <div class="row">
+          <div class="col-sm-6 col-md-4">
+            <div class="shop__thumb">
+              <a href="#">
+                <div class="shop-thumb__img">
+                  <img src="https://www.bootdey.com/image/400x400/87CEFA/000000" class="img-responsive" alt="...">
+                </div>
+                <h5 class="shop-thumb__title">
+                  Product Title
+                </h5>
+                <div class="shop-thumb__price">
+                  <span class="shop-thumb-price_old">$80.99</span>
+                  <span class="shop-thumb-price_new">$59.99</span>
+                </div>
+              </a>
+            </div>
+          </div>
+          <!--        ============================================================ SECTION ============================================================-->
+          <div class="col-sm-6 col-md-4">
+            <div class="shop__thumb">
+              <a href="#">
+                <div class="shop-thumb__img">
+                  <img src="https://www.bootdey.com/image/400x400/20B2AA/000000" class="img-responsive" alt="...">
+                </div>
+                <h5 class="shop-thumb__title">
+                  Product Title
+                </h5>
+                <div class="shop-thumb__price">
+                  $59.99
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <!--        ============================================================ SECTION ============================================================-->
+
+          <div class="col-sm-6 col-md-4">
+            <div class="shop__thumb">
+              <a href="view">
+                <div class="shop-thumb__img">
+                  <img src="https://www.bootdey.com/image/400x400/FFB6C1/000000" class="img-responsive" alt="...">
+                </div>
+                <h5 class="shop-thumb__title">
+                  Product Title
+                </h5>
+                <div class="shop-thumb__price">
+                  $59.99
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <!--        ============================================================ SECTION ============================================================-->
+
+          <div class="col-sm-6 col-md-4">
+            <div class="shop__thumb">
+              <a href="#">
+                <div class="shop-thumb__img">
+                  <img src="https://www.bootdey.com/image/400x400/87CEFA/000000" class="img-responsive" alt="...">
+                </div>
+                <h5 class="shop-thumb__title">
+                  Product Title
+                </h5>
+                <div class="shop-thumb__price">
+                  $59.99
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <!--        ============================================================ SECTION ============================================================-->
+
+          <div class="col-sm-6 col-md-4">
+            <div class="shop__thumb">
+              <a href="#">
+                <div class="shop-thumb__img">
+                  <img src="https://www.bootdey.com/image/400x400/FFA07A/000000" class="img-responsive" alt="...">
+                </div>
+                <h5 class="shop-thumb__title">
+                  Product Title
+                </h5>
+                <div class="shop-thumb__price">
+                  $59.99
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <!--        ============================================================ SECTION ============================================================-->
+
+          <div class="col-sm-6 col-md-4">
+            <div class="shop__thumb">
+              <a href="#">
+                <div class="shop-thumb__img">
+                  <img src="https://www.bootdey.com/image/400x400/48D1CC/000000" class="img-responsive" alt="...">
+                </div>
+                <h5 class="shop-thumb__title">
+                  Product Title
+                </h5>
+                <div class="shop-thumb__price">
+                  $59.99
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <!--        ============================================================ SECTION ============================================================-->
+
+          <div class="col-sm-6 col-md-4">
+            <div class="shop__thumb">
+              <a href="#">
+                <div class="shop-thumb__img">
+                  <img src="https://www.bootdey.com/image/400x400/48D1CC/000000" class="img-responsive" alt="...">
+                </div>
+                <h5 class="shop-thumb__title">
+                  Product Title
+                </h5>
+                <div class="shop-thumb__price">
+                  $59.99
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <!--        ============================================================ SECTION ============================================================-->
+
+          <div class="col-sm-6 col-md-4">
+            <div class="shop__thumb">
+              <a href="#">
+                <div class="shop-thumb__img">
+                  <img src="https://www.bootdey.com/image/400x400/48D1CC/000000" class="img-responsive" alt="...">
+                </div>
+                <h5 class="shop-thumb__title">
+                  Product Title
+                </h5>
+                <div class="shop-thumb__price">
+                  $59.99
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <!--        ============================================================ SECTION ============================================================-->
+
+          <div class="col-sm-6 col-md-4">
+            <div class="shop__thumb">
+              <a href="#">
+                <div class="shop-thumb__img">
+                  <img src="https://www.bootdey.com/image/400x400/48D1CC/000000" class="img-responsive" alt="...">
+                </div>
+                <h5 class="shop-thumb__title">
+                  Product Title
+                </h5>
+                <div class="shop-thumb__price">
+                  $59.99
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <!--        ============================================================ SECTION ============================================================-->
+
+          <div class="col-sm-6 col-md-4">
+            <div class="shop__thumb">
+              <a href="#">
+                <div class="shop-thumb__img">
+                  <img src="https://www.bootdey.com/image/400x400/48D1CC/000000" class="img-responsive" alt="...">
+                </div>
+                <h5 class="shop-thumb__title">
+                  Product Title
+                </h5>
+                <div class="shop-thumb__price">
+                  $59.99
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <!--        ============================================================ SECTION ============================================================-->
+
+          <div class="col-sm-6 col-md-4">
+            <div class="shop__thumb">
+              <a href="#">
+                <div class="shop-thumb__img">
+                  <img src="https://www.bootdey.com/image/400x400/48D1CC/000000" class="img-responsive" alt="...">
+                </div>
+                <h5 class="shop-thumb__title">
+                  Product Title
+                </h5>
+                <div class="shop-thumb__price">
+                  $59.99
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <!--        ============================================================ SECTION ============================================================-->
+
+          <div class="col-sm-6 col-md-4">
+            <div class="shop__thumb">
+              <a href="#">
+                <div class="shop-thumb__img">
+                  <img src="https://www.bootdey.com/image/400x400/48D1CC/000000" class="img-responsive" alt="...">
+                </div>
+                <h5 class="shop-thumb__title">
+                  Product Title
+                </h5>
+                <div class="shop-thumb__price">
+                  $59.99
+                </div>
+              </a>
+            </div>
+
+            <!--        ============================================================ SECTION ============================================================-->
+
+          </div>
+        </div>
+
+
+
+
+
+        <div class="row">
+          <div class="col-sm-12">
+            <ul class="pagination pull-right">
+              <li class="disabled"><a href="#">«</a></li>
+              <li class="active"><a href="#">1 <span class="sr-only">(current)</span></a></li>
+              <li><a href="#">2</a></li>
+              <li><a href="#">3</a></li>
+              <li><a href="#">4</a></li>
+              <li><a href="#">5</a></li>
+              <li><a href="#">»</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
