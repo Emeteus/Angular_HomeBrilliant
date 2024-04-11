@@ -13,13 +13,13 @@
               <div class="login-dropdown-content" id="dropdownContent">
                 <a href="login" id="loginLink">
                   <img ngSrc="../../../assets/img/svg/login.svg" alt="Register" class="login-icon invert-color" height="16" width="16">
-                  <span class="dark-lista translate" data-lang-id="login">Login</span>
+                  <span class="dark-lista translate" data-lang-id="login">{{"login" | translate}}</span>
                 </a>
 
                 <a href="register" id="registerLink">
                   <img ngSrc="../../../assets/img/svg/register.svg" alt="Register" class="login-icon invert-color" height="16"
                        width="16">
-                  <span class="dark-lista translate" data-lang-id="register">Register</span>
+                  <span class="dark-lista translate" data-lang-id="register">{{"register" | translate}}</span>
                 </a>
               </div>
             </div>
@@ -27,25 +27,31 @@
 
 
           </li>
-          <li>
-            <div class="language-dropdown">
-              <button id="languageButton" class="flex items-center white-icon">
-                <img ngSrc="../../../assets/img/svg/lang.svg" alt="Language" class="login-icon" height="16" width="16">
-              </button>
-              <div class="language-list dark-list">
-                <ul class="listul">
-                  <li class="listli"><a href="#" data-lang-code="en" class="lista hovera dark-lista"><img
-                    ngSrc="../../../assets/img/logo/eng.png" class="flag" alt="English Flag" height="552"
-                    width="920"> <span data-lang-id="eng" class="invert-color">English</span></a></li>
-                  <li class="listli"><a href="#" data-lang-code="ua" class="lista hovera dark-lista"><img
-                    ngSrc="../../../assets/img/logo/ukr.png" class="flag" alt="Ukraine Flag" height="379"
-                    width="626"><span data-lang-id="ua" class="invert-color">Ukrainian</span></a></li>
+            <li>
+                <div class="language-dropdown">
+                    <button id="languageButton" class="flex items-center white-icon">
+                        <img src="../../../assets/img/svg/lang.svg" alt="Language" class="login-icon" height="16" width="16">
+                    </button>
+                    <div class="language-list dark-list">
+                        <ul class="listul">
+                            <li class="listli">
+                                <a  (click)="switchLanguage('en')" class="lista hovera dark-lista">
+                                    <img src="../../../assets/img/logo/eng.png" class="flag" alt="English Flag" height="552" width="920">
+                                    <span>{{"eng" | translate}}</span>
+                                </a>
+                            </li>
+                            <li class="listli">
+                                <a  (click)="switchLanguage('ua')" class="lista hovera dark-lista">
+                                    <img src="../../../assets/img/logo/ukr.png" class="flag" alt="Ukraine Flag" height="379" width="626">
+                                    <span>{{"ukr" | translate}}</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </li>
 
-                </ul>
-              </div>
-            </div>
-          </li>
-          <li>
+            <li>
             <button id="toggleButton" class="flex items-center">
               <img ngSrc="../../../assets/img/svg/moon.svg" alt="Moon Icon" class="mr-2 moon-icon" style="width: 24px; height: 24px;"
                    height="16" width="16">
@@ -58,21 +64,21 @@
       <ul class="menu ">
         <li class="item">
 
-          <a routerLink="" data-lang-id="home">Home</a>
+          <a routerLink="">{{"home" | translate}}</a>
         </li>
         <li class="item">
 
-          <a routerLink="about" data-lang-id="about-hed">About</a>
+          <a routerLink="about" data-lang-id="about-hed">{{"about" | translate}}</a>
 
         </li>
         <!--        <li class="item">-->
         <!--          <a routerLink="contacts" data-lang-id="contacts">Contacts</a>-->
         <!--        </li>-->
         <li class="item">
-          <a routerLink="catalog" data-lang-id="catalog">Catalog</a>
+          <a routerLink="catalog" data-lang-id="catalog">{{ "catalog" | translate }}</a>
         </li>
         <li class="item">
-          <a routerLink="faq">FAQ</a>
+          <a routerLink="faq">{{"faq" | translate}}</a>
         </li>
       </ul>
       <div class="hamburger">

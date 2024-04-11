@@ -1,4 +1,8 @@
-import {Component, ElementRef, OnInit} from '@angular/core';
+import { Component, ElementRef, OnInit } from '@angular/core';
+import { TranslateService } from '@ngx-translate/core';
+import { CookieService } from 'ngx-cookie-service'; //
+
+
 
 @Component({
   selector: 'app-header',
@@ -6,10 +10,16 @@ import {Component, ElementRef, OnInit} from '@angular/core';
   styleUrl: './header.component.css'
 })
 export class HeaderComponent implements OnInit {
-  constructor(private elementRef: ElementRef) {}
+  constructor(
+      private elementRef: ElementRef,
+      private translateService: TranslateService,
+      private cookieService: CookieService // Ensure you use CookieService from 'ngx-cookie-service'
+  ) {}
 
   ngOnInit() {
     if (typeof document !== 'undefined') {
+      // Your header component logic here
+
       const dropdownButton = this.elementRef.nativeElement.querySelector('#dropdownButton');
       const loginLink = this.elementRef.nativeElement.querySelector('#loginLink');
       const registerLink = this.elementRef.nativeElement.querySelector('#registerLink');
@@ -83,6 +93,16 @@ export class HeaderComponent implements OnInit {
         });
       }
     }
+
+    // Language initialization logic
+    const savedLanguage = this.cookieService.get('selectedLanguage');
+    const languageCode = savedLanguage || navigator.language || 'en';
+    this.translateService.setDefaultLang(languageCode);
+    this.translateService.use(languageCode);
+  }
+
+  switchLanguage(language: string) {
+    this.translateService.use(language);
+    this.cookieService.set('selectedLanguage', language);
   }
 }
-

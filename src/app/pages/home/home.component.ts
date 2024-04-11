@@ -1,4 +1,6 @@
 import {Component} from '@angular/core';
+import {TranslateService} from "@ngx-translate/core";
+
 
 // import "../../../assets/js/lang.js"
 
@@ -8,6 +10,5 @@ import {Component} from '@angular/core';
   styleUrl: './home.component.css'
 })
 export class HomeComponent {
-
 
 }
