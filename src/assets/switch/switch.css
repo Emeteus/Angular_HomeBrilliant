@@ -171,11 +171,18 @@ body.dark .dark-list{
 }
 
 body.dark .dark-lista{
-  color: #fff;
+  color: #ffffff;
+}
+
+body.dark .color-ded-white{
+  color: white;
 }
 
 body.dark .dark-border{
   border: 2px solid rgb(241, 144, 109);
+}
+body.darj .hoverbla:hover{
+  color: #852D91;
 }
 
 body.dark .login-button-link {

@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrl: './ads.component.css'
 })
 export class AdsComponent {
+  constructor() { }
+
+  ngOnInit(): void {
+    document.title = 'ADD | BrilliantHome'; // Установка нового названия вкладки
+  }
 
 }

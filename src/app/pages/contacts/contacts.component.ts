@@ -6,5 +6,8 @@ import { Component } from '@angular/core';
   styleUrl: './contacts.component.css'
 })
 export class ContactsComponent {
+  ngOnInit(): void {
+    document.title = 'Contacts | BrilliantHome'; // Установка нового названия вкладки
+  }
 
 }

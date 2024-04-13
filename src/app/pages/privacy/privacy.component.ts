@@ -6,5 +6,8 @@ import { Component } from '@angular/core';
   styleUrl: './privacy.component.css'
 })
 export class PrivacyComponent {
+  ngOnInit(): void {
+    document.title = 'Privacy | BrilliantHome'; // Установка нового названия вкладки
+  }
 
 }

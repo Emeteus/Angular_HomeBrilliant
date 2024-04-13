@@ -10,5 +10,8 @@ import {TranslateService} from "@ngx-translate/core";
   styleUrl: './home.component.css'
 })
 export class HomeComponent {
+  ngOnInit(): void {
+    document.title = 'BrilliantHome'; // Установка нового названия вкладки
+  }
 
 }

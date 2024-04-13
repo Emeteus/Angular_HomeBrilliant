@@ -6,5 +6,8 @@ import { Component } from '@angular/core';
   styleUrl: './register.component.css'
 })
 export class RegisterComponent {
+  ngOnInit(): void {
+    document.title = 'Register | BrilliantHome'; // Установка нового названия вкладки
+  }
 
 }

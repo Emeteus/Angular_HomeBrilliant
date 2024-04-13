@@ -10,6 +10,11 @@ export class FaqComponent implements OnInit {
   constructor(private elementRef: ElementRef) { }
 
   ngOnInit(): void {
+
+      document.title = 'FAQ | BrilliantHome'; // Установка нового названия вкладки
+
+
+
     const items = this.elementRef.nativeElement.querySelectorAll(".accordion button");
 
     function toggleAccordion(this: HTMLElement) {

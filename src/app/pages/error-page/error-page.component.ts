@@ -6,5 +6,8 @@ import { Component } from '@angular/core';
   styleUrl: './error-page.component.css'
 })
 export class ErrorPageComponent {
+  ngOnInit(): void {
+    document.title = 'ERROR'; // Установка нового названия вкладки
+  }
 
 }

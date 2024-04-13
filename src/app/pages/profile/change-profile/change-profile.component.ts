@@ -6,5 +6,8 @@ import { Component } from '@angular/core';
   styleUrl: './change-profile.component.css'
 })
 export class ChangeProfileComponent {
+  ngOnInit(): void {
+    document.title = 'Change Profile | BrilliantHome'; // Установка нового названия вкладки
+  }
 
 }

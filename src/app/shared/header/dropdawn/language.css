@@ -59,8 +59,9 @@
 }
 
 .language-list .hovera:hover {
-    background-color: #4d4d4d3d;
+    background-color: rgba(43, 18, 76, 0.6);
     border-radius: 20px;
+    cursor: pointer;
 
 }
 

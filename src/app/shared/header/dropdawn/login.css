@@ -48,5 +48,5 @@
 
 /* Style for the dropdown links on hover */
 .login-dropdown-content a:hover {
-    background-color: #4d4d4d3d;
+    background-color: rgba(43, 18, 76, 0.6);
 }

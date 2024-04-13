@@ -6,5 +6,8 @@ import { Component } from '@angular/core';
   styleUrl: './catalog.component.css'
 })
 export class CatalogComponent {
+  ngOnInit(): void {
+    document.title = 'Catalog | BrilliantHome'; // Установка нового названия вкладки
+  }
 
 }

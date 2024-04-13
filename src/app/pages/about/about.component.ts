@@ -10,6 +10,7 @@ export class AboutComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    document.title = 'About | BrilliantHome'; // Установка нового названия вкладки
     if (typeof document !== 'undefined') {
       if (document.readyState === 'complete') {
         this.initSlider();

@@ -6,5 +6,8 @@ import { Component } from '@angular/core';
   styleUrl: './view.component.css'
 })
 export class ViewComponent {
+  ngOnInit(): void {
+    document.title = 'View | BrilliantHome'; // Установка нового названия вкладки
+  }
 
 }
