@@ -16,6 +16,10 @@ body {
   margin-top:30px;
 }
 
+.txcenter{
+  text-align: center;
+}
+
 .profile-nav .user-heading {
   background: rgba(43, 18, 76, 0.6);
   color: #ffffff;

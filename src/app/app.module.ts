@@ -23,7 +23,7 @@ import { AdsComponent } from './pages/ads/ads.component';
 import {NgOptimizedImage} from "@angular/common";
 
 import {TranslateLoader, TranslateModule} from '@ngx-translate/core';
-import {TranslateHttpLoader} from "@ngx-translate/http-loader";
+import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import {HttpClientModule, HttpClient} from "@angular/common/http";
 
 export function HttpLoaderFactory(http: HttpClient) {
