@@ -18,14 +18,19 @@ export class AppComponent implements OnInit {
 
   ngOnInit() {
     // Initialize language settings
-    const savedLanguage = this.cookieService.get('selectedLanguage');
-    const languageCode = savedLanguage || navigator.language || 'en';
-    this.translateService.setDefaultLang(languageCode);
-    this.translateService.use(languageCode);
+    let savedLanguage = this.cookieService.get('selectedLanguage');
+    if (!savedLanguage) {
+      savedLanguage = navigator.language || 'en';
+      this.cookieService.set('selectedLanguage', savedLanguage, 365); // Сохраняем выбранный язык в куки на 365 дней
+    }
+
+    this.translateService.setDefaultLang(savedLanguage);
+    this.translateService.use(savedLanguage);
 
     // Initialize theme settings
     if (typeof document !== 'undefined') {
       document.addEventListener('DOMContentLoaded', () => {
+        const savedTheme = localStorage.getItem('theme');
         const body: HTMLElement = document.body;
         const main: HTMLElement | null = document.querySelector('main');
         const moonIcon: HTMLElement | null = document.querySelector('.moon-icon');
@@ -33,15 +38,12 @@ export class AppComponent implements OnInit {
         const footer: HTMLElement | null = document.querySelector('footer');
         const toggleButton: HTMLElement | null = document.getElementById('toggleButton');
 
-        // Apply theme styles based on saved theme or default to light theme
-        const savedTheme: string = this.getCookie('theme');
         if (savedTheme === 'dark') {
           this.applyDarkTheme(body, main, moonIcon, sunIcon, footer);
         } else {
           this.applyLightTheme(body, main, moonIcon, sunIcon, footer);
         }
 
-        // Toggle theme on button click
         if (toggleButton) {
           toggleButton.addEventListener('click', () => {
             body.classList.toggle('dark');
@@ -52,10 +54,10 @@ export class AppComponent implements OnInit {
             const isDarkTheme: boolean = body.classList.contains('dark');
             if (isDarkTheme) {
               this.applyDarkTheme(body, main, moonIcon, sunIcon, footer);
-              this.setCookie('theme', 'dark', 365);
+              localStorage.setItem('theme', 'dark'); // Сохраняем тему в кеше браузера
             } else {
               this.applyLightTheme(body, main, moonIcon, sunIcon, footer);
-              this.setCookie('theme', 'light', 365);
+              localStorage.setItem('theme', 'light'); // Сохраняем тему в кеше браузера
             }
           });
         }
@@ -65,7 +67,7 @@ export class AppComponent implements OnInit {
 
   switchLanguage(language: string) {
     this.translateService.use(language);
-    this.cookieService.set('selectedLanguage', language);
+    this.cookieService.set('selectedLanguage', language, 365); // Сохраняем выбранный язык в куки на 365 дней
   }
 
   // Apply dark theme styles
@@ -106,30 +108,5 @@ export class AppComponent implements OnInit {
       footer.style.background = '';
       footer.style.color = '';
     }
-  }
-
-  // Function to set cookie
-  private setCookie(name: string, value: string, days: number): void {
-    const date: Date = new Date();
-    date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
-    const expires: string = "expires=" + date.toUTCString();
-    document.cookie = name + "=" + value + ";" + expires + ";path=/";
-  }
-
-  // Function to get cookie value by name
-  private getCookie(name: string): string {
-    const cname: string = name + "=";
-    const decodedCookie: string = decodeURIComponent(document.cookie);
-    const ca: string[] = decodedCookie.split(';');
-    for (let i = 0; i < ca.length; i++) {
-      let c: string = ca[i];
-      while (c.charAt(0) === ' ') {
-        c = c.substring(1);
-      }
-      if (c.indexOf(cname) === 0) {
-        return c.substring(cname.length, c.length);
-      }
-    }
-    return "";
   }
 }

@@ -22,7 +22,7 @@ import { HeaderComponent } from './shared/header/header.component';
 import { AdsComponent } from './pages/ads/ads.component';
 import {NgOptimizedImage} from "@angular/common";
 
-import {TranslateLoader, TranslateModule} from '@ngx-translate/core';
+import {TranslateLoader, TranslateModule, TranslateService} from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import {HttpClientModule, HttpClient} from "@angular/common/http";
 
@@ -52,21 +52,25 @@ export function HttpLoaderFactory(http: HttpClient) {
     HeaderComponent,
     AdsComponent
   ],
-    imports: [
-        BrowserModule,
-        AppRoutingModule,
-        NgOptimizedImage,
-        HttpClientModule,
-        TranslateModule.forRoot({
-          loader:{
-            provide: TranslateLoader,
-            useFactory: HttpLoaderFactory,
-            deps: [HttpClient]
-          }
-        })
-
-    ],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    NgOptimizedImage,
+    HttpClientModule,
+    TranslateModule.forRoot({
+      loader: {
+        provide: TranslateLoader,
+        useFactory: HttpLoaderFactory,
+        deps: [HttpClient]
+      }
+    })
+  ],
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+  constructor(private translateService: TranslateService) {
+    this.translateService.addLangs(['en', 'ua']); // Добавьте нужные языки, исключая 'ru-RU'
+    this.translateService.setDefaultLang('ua'); // Установите язык по умолчанию
+  }
+}
