@@ -1,0 +1,26 @@
+.cookie-container {
+    border-top: 2px solid #ff0000;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(242, 242, 242); /* Цвет фона с прозрачностью */
+    padding: 20px;
+    text-align: center;
+    backdrop-filter: none; /* Отключаем размытие фона */
+}
+
+.cookie-container button {
+    margin: 10px; /* внешние отступы для кнопок */
+}
+
+/* Для мобильных устройств */
+@media only screen and (max-width: 600px) {
+    .cookie-container {
+        padding: 10px; /* Уменьшаем внутренние отступы */
+    }
+
+    .cookie-container button {
+        margin: 5px; /* Уменьшаем внешние отступы для кнопок */
+    }
+}

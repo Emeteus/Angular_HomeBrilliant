@@ -1,13 +1,14 @@
-#main {
+.main {
   margin: 50px 0;
 }
 
-#main #faq .card {
+.main .faq .card {
   margin-bottom: 30px;
   border: 0;
 }
 
-#main #faq .card .card-header {
+
+.main .faq .card .card-header {
   border: 0;
   -webkit-box-shadow: 0 0 20px 0 rgba(213, 213, 213, 0.5);
           box-shadow: 0 0 20px 0 rgba(213, 213, 213, 0.5);
@@ -15,7 +16,7 @@
   padding: 0;
 }
 
-#main #faq .card .card-header .btn-header-link {
+.main .faq .card .card-header .btn-header-link {
   color: #fff;
   display: block;
   text-align: left;
@@ -24,32 +25,32 @@
   padding: 20px;
 }
 
-#main #faq .card .card-header .btn-header-link:after {
+.main .faq .card .card-header .btn-header-link:after {
   content: "\f107";
   font-family: 'Font Awesome 5 Free';
   font-weight: 900;
   float: right;
 }
 
-#main #faq .card .card-header .btn-header-link.collapsed {
+.main .faq .card .card-header .btn-header-link.collapsed {
   background: #A541BB;
   color: #fff;
 }
 
-#main #faq .card .card-header .btn-header-link.collapsed:after {
+.main .faq .card .card-header .btn-header-link.collapsed:after {
   content: "\f106";
 }
 
-#main #faq .card .collapsing {
+.main .faq .card .collapsing {
   background: #FFE472;
   line-height: 30px;
 }
 
-#main #faq .card .collapse {
+.main .faq .card .collapse {
   border: 0;
 }
 
-#main #faq .card .collapse.show {
+.main .faq .card .collapse.show {
   background: #FFE472;
   line-height: 30px;
   color: #222;
@@ -59,7 +60,7 @@
   margin-left: 200px;
   margin-right: 200px;
   font-size: 20px;
-  
+
 }
 
 
@@ -191,7 +192,7 @@
 
   /* Additional mobile-specific styles if needed */
   /* For example, you might want to make the font size smaller for better readability on small screens */
-  .main {
+  main {
     font-size: 16px;
   }
 

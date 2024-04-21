@@ -25,6 +25,9 @@ import {NgOptimizedImage} from "@angular/common";
 import {TranslateLoader, TranslateModule, TranslateService} from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 import {HttpClientModule, HttpClient} from "@angular/common/http";
+import {CookiePermissionDialogComponent} from "./pages/cookie-permission-dialog/cookie-permission-dialog.component";
+import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
+import {MatButton} from "@angular/material/button";
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http, './assets/i18n/', '.json');
@@ -50,7 +53,8 @@ export function HttpLoaderFactory(http: HttpClient) {
     FaqConteiner2Component,
     FooterComponent,
     HeaderComponent,
-    AdsComponent
+    AdsComponent,
+    CookiePermissionDialogComponent
   ],
   imports: [
     BrowserModule,
@@ -63,9 +67,12 @@ export function HttpLoaderFactory(http: HttpClient) {
         useFactory: HttpLoaderFactory,
         deps: [HttpClient]
       }
-    })
+    }),
+    MatButton
   ],
-  providers: [],
+  providers: [
+    provideAnimationsAsync()
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule {

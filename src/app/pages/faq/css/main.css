@@ -4,23 +4,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Philosopher:wght@700&display=swap');
 
 body{
-    margin: 0;
-    padding: 0;
-    overflow-x:hidden;
+  margin: 0;
+  padding: 0;
+  overflow-x:hidden;
 }
 
 h1 {
   font-family: 'Philosopher', sans-serif;
-    font-size: 90px;
-    line-height: 65px;
-    text-align: center;
-    max-width: 100%;
-    min-width: auto;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    line-height:1;
+  font-size: 90px;
+  line-height: 65px;
+  text-align: center;
+  max-width: 100%;
+  min-width: auto;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height:1;
 
 
 }
@@ -29,8 +29,8 @@ h1 {
 .under-text {
   font-family: 'Philosopher', sans-serif;
   font-size: 40px;
-    text-align: center;
-    margin: 0 auto;
+  text-align: center;
+  margin: 0 auto;
 }
 
 * {
@@ -154,58 +154,58 @@ h1 {
 
   h1 {
     font-family: 'Philosopher', sans-serif;
-      font-size: 80px;
-      line-height: 65px;
-      text-align: center;
-      max-width: 100%;
-      min-width: auto;
-      margin: 0 auto;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      line-height:1;
-      overflow-x:hidden;
+    font-size: 80px;
+    line-height: 65px;
+    text-align: center;
+    max-width: 100%;
+    min-width: auto;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height:1;
+    overflow-x:hidden;
 
 
   }
 
-    .container-faq {
-      padding: 2rem; /* Уменьшил отступы для мобильных устройств */
-      width: 100%; /* Ширина на мобильных устройствах будет 100% */
-      overflow-x:hidden;
-    }
-
-    .accordion .accordion-item {
-      border-radius: 20px; /* Уменьшил радиус скругления углов */
-      overflow-x:hidden;
-    }
-
-    .accordion button .icon {
-      top: 30%; /* Поднял иконку немного выше */
-      right: 10px; /* Уменьшил отступ справа */
-      overflow-x:hidden;
-    }
-
-    .accordion button .accordion-title {
-      padding-right: 100px; /* Добавил отступ справа для текста, чтобы избежать наложения на иконки */
-      white-space:initial;
-      overflow-x:hidden;
-    }
-
-    .accordion button[aria-expanded=true] + .accordion-content {
-      max-height: none; /* Отменяю максимальную высоту для контента */
-      padding: 10px; /* Увеличил отступы */
-    }
-
-    .accordion .accordion-content p {
-      margin: 1em 0; /* Уменьшил отступы */
-    }
+  .container-faq {
+    padding: 2rem; /* Уменьшил отступы для мобильных устройств */
+    width: 100%; /* Ширина на мобильных устройствах будет 100% */
+    overflow-x:hidden;
   }
 
-  @media only screen and (max-width: 300px) {
-
-    h1{
-      font-size: 100px;
-    }
-
+  .accordion .accordion-item {
+    border-radius: 20px; /* Уменьшил радиус скругления углов */
+    overflow-x:hidden;
   }
+
+  .accordion button .icon {
+    top: 30%; /* Поднял иконку немного выше */
+    right: 10px; /* Уменьшил отступ справа */
+    overflow-x:hidden;
+  }
+
+  .accordion button .accordion-title {
+    padding-right: 100px; /* Добавил отступ справа для текста, чтобы избежать наложения на иконки */
+    white-space:initial;
+    overflow-x:hidden;
+  }
+
+  .accordion button[aria-expanded=true] + .accordion-content {
+    max-height: none; /* Отменяю максимальную высоту для контента */
+    padding: 10px; /* Увеличил отступы */
+  }
+
+  .accordion .accordion-content p {
+    margin: 1em 0; /* Уменьшил отступы */
+  }
+}
+
+@media only screen and (max-width: 300px) {
+
+  h1{
+    font-size: 100px;
+  }
+
+}

@@ -599,7 +599,11 @@
   "166": "Birthday",
   "167": "Occupation",
   "168": "Email",
-  "169": "Phone"
+  "169": "Phone",
+  "170": "PRESERVATION OF PRIVACY",
+  "171": "We respect your rights as a data subject. When we receive your personal data, we will inform you about the data protection methods we use, the purpose and the legal basis for processing the data. We will only keep your personal data for as long as necessary.",
+  "172": "Yes",
+  "173": "No"
 
 
 }

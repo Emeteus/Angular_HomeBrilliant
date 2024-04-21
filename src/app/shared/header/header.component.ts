@@ -51,8 +51,8 @@ export class HeaderComponent implements OnInit {
   private initializeLanguage() {
     const savedLanguage = this.cookieService.get('selectedLanguage');
     const languageCode = savedLanguage || navigator.language || 'en';
-    this.translateService.setDefaultLang(languageCode);
-    this.translateService.use(languageCode);
+    // this.translateService.setDefaultLang(languageCode);
+    // this.translateService.use(languageCode);
   }
 
   switchLanguage(language: string) {
