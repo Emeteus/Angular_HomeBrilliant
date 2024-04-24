@@ -3,3 +3,8 @@
 @import "css/icon.css";
 @import "css/reg.css";
 @import "css/space.css";
+
+main{
+    overflow: hidden;
+
+}
